@@ -6,4 +6,4 @@ addons:
       secure: $chulwoon
 script:
   # other script steps might be done before running the actual analysis
-  - sonar-scanner
+  - sonar-scanner -D sonar.host.url=$SONAR_HOST_URL -D sonar.github.endpoint=$GITHUB_API_URL -D sonar.github.oauth=$SONAR_GITHUB_TOKEN
