@@ -9,11 +9,11 @@ public class Main {
         // test logic
 
         List list = Arrays.asList("hello","world");
-
+        String str = "";
         for(int i = 0; i<list.size(); i++){
-            System.out.println(list.get(i));
+            str += list.get(i);
         }
-        //
+        System.out.println(str.toString());
         // if sonarqube execute, It would announce waring message.
     }
 }
