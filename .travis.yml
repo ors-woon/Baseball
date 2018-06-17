@@ -1,12 +1,14 @@
-language: java
+dist: trusty
+sudo: required
+
 addons:
   sonarcloud:
     organization: "jangchulwoon-github"
     token:
       secure: "8996a266e0a71bfaf7531bd955847770e04898c8"
-install:
-  - yarn install
+
+jdk:
+  - oraclejdk8
 
 script:
-  - yarn build
   - sonar-scanner
