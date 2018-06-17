@@ -1,9 +1,9 @@
 language: java
 addons:
   sonarcloud:
-    organization: "jangchulwoon-github" # the key of the org you chose at step #3
+    organization: "jangchulwoon-github"
     token:
-      secure: chulwoon.jang # encrypted value of your token
+      secure: $chulwoon
 script:
   # other script steps might be done before running the actual analysis
   - sonar-scanner
