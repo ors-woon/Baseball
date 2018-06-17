@@ -3,7 +3,7 @@ addons:
   sonarcloud:
     organization: "jangchulwoon-github"
     token:
-      secure: $chulwoon
+      secure: "8996a266e0a71bfaf7531bd955847770e04898c8"
 install:
   - yarn install
 
