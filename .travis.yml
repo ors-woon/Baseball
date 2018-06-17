@@ -12,3 +12,7 @@ jdk:
 
 script:
   - sonar-scanner
+
+sonar:
+  sources: .
+  projectKey: 'webServer'
